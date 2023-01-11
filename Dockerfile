@@ -12,4 +12,4 @@ COPY composer.json /app/composer.json
 RUN composer install -d /app
 COPY init.php /app/init.php
 
-ENTRYPOINT ["bin/bash"]
+ENTRYPOINT ["bin/bash", "-l", "-c"]
